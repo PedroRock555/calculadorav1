@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="calculadora">
+
+        <header class="cabecalho">
+            <h1>Calculadora</h1>
+            <span>STANDARD</span>
+        </header>
+
+        <section class="visor">
+            <div class="expressao" id="expressao"> </div>
+            <div class="resultado" id="resultado">0</div>
+        </section>
+
+        <section class="botoes">
+
+            <button class="especial" data-action="limpar">AC</button>
+            <button class="especial" data-action="apagar">DEL</button>
+            <button class="operador" data-operation="porcentagem">%</button>
+            <button class="operador" data-operation="divisao">÷</button>
+
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operador" data-operation="multiplicacao">×</button>
+
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="operador" data-operation="subtracao">−</button>
+
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="operador" data-operation="soma">+</button>
+
+            <button class="zero">0</button>
+            <button>,</button>
+            <button class="igual" data-action="calcular">=</button>
+
+        </section>
+
+        <footer>
+            <p>Desenvolvido com Python & JavaScript</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

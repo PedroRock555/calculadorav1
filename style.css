@@ -1,0 +1,171 @@
+
+/* Configurações gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #101014;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+/* Corpo da calculadora */
+
+.calculadora {
+    width: 350px;
+    padding: 25px;
+
+    background: #1c1c24;
+    border: 1px solid #30303a;
+    border-radius: 24px;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* Cabeçalho */
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.cabecalho h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cabecalho span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #9999aa;
+}
+
+/* Visor */
+
+.visor {
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    margin-bottom: 25px;
+    padding: 15px;
+
+    background: #14141a;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.expressao {
+    min-height: 25px;
+    color: #9999aa;
+    font-size: 16px;
+}
+
+.resultado {
+    max-width: 100%;
+    font-size: 38px;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+/* Grade de botões */
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Botões gerais */
+
+button {
+    height: 60px;
+
+    border: none;
+    border-radius: 14px;
+
+    background: #292933;
+    color: #ffffff;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #3a3a47;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Botões especiais */
+
+.especial {
+    background: #393044;
+    color: #c9a9ff;
+}
+
+/* Operadores */
+
+.operador {
+    background: #342653;
+    color: #bd9aff;
+}
+
+.operador:hover {
+    background: #49346e;
+}
+
+/* Botão de igualdade */
+
+.igual {
+    background: #8b5cf6;
+    color: #ffffff;
+}
+
+.igual:hover {
+    background: #a078ff;
+}
+
+/* Botão zero */
+
+.zero {
+    grid-column: span 2;
+}
+
+/* Rodapé */
+
+footer {
+    margin-top: 25px;
+    text-align: center;
+    color: #777783;
+    font-size: 11px;
+}
+
+/* Responsividade */
+
+@media (max-width: 400px) {
+    .calculadora {
+        width: calc(100% - 30px);
+        padding: 20px;
+    }
+}
